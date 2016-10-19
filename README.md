@@ -5,6 +5,9 @@ applications that are deployed using multiple Gunicorn works. To be specific,
 it explains how you can emit, collect and expose Prometheus metrics from
 multiple Gunicorn worker processes.
 
+The integration uses a special multi-processing feature in the Prometheus client,
+details of which you can find here: https://github.com/prometheus/client_python#multiprocess-mode-gunicorn
+
 
 ## Setup
 

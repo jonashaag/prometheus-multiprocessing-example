@@ -1,6 +1,6 @@
 # Gunicorn multi-worker Prometheus example
 
-This example web application shows how you can use Prometheus to monitor web
+This example web application shows how you can use Prometheus to monitor Flask web
 applications that are deployed using multiple Gunicorn works. To be specific,
 it explains how you can emit, collect and expose Prometheus metrics from
 multiple Gunicorn worker processes.

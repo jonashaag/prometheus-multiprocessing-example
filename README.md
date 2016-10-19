@@ -10,7 +10,7 @@ multiple Gunicorn worker processes.
 
 In a virtualenv, install Flask, Gunicorn and the Python Prometheus client:
 
-  pip install flask gunicorn prometheus-client
+    pip install flask gunicorn prometheus-client
 
 ## Deployment
 
@@ -19,9 +19,9 @@ specified upfront using the `prometheus_multiproc_dir` environment variable.
 
 To deploy the example application with 4 Gunicorn worker processes:
 
-  rm -rf multiproc-tmp
-  mkdir multiproc-tmp
-  env prometheus_multiproc_dir=multiproc-tmp gunicorn -c gunicorn_conf.py -w 4 yourapp:app
+    rm -rf multiproc-tmp
+    mkdir multiproc-tmp
+    env prometheus_multiproc_dir=multiproc-tmp gunicorn -c gunicorn_conf.py -w 4 yourapp:app
 
 You are responsible for ensuring the temporary directory exists and is cleaned
 up before each deployment.

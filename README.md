@@ -1,12 +1,14 @@
 # Gunicorn multi-worker Prometheus example
 
+**FastAPI**: See https://prometheus.github.io/client_python/exporting/http/fastapi-gunicorn/.
+
 This example web application shows how you can use Prometheus to monitor Flask web
 applications that are deployed using multiple Gunicorn works. To be specific,
 it explains how you can emit, collect and expose Prometheus metrics from
 multiple Gunicorn worker processes.
 
 The integration uses a special multi-processing feature in the Prometheus client,
-details of which you can find here: https://github.com/prometheus/client_python#multiprocess-mode-eg-gunicorn
+details of which you can find here: https://prometheus.github.io/client_python/multiprocess/
 
 
 ## Setup
